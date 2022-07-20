@@ -1,0 +1,24 @@
+@import "fonts";
+@import "~normalize.css/normalize";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto";
+	font-weight: 400;
+	color: #777;
+	font-size: 1.6rem;
+	letter-spacing: 0.2rem;
+	padding: 5rem;
+	background: #ffffff;
+	color: #fff;
+}
+
+.container {
+	background: #a8ab7c61;
+}
+
+
+@import "./components/header";
