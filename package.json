@@ -12,6 +12,7 @@
   "devDependencies": {
     "del": "^6.1.1",
     "gulp-cli": "^2.3.0",
+    "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "node-sass-tilde-importer": "^1.0.2",
     "sass": "^1.53.0"
