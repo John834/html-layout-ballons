@@ -4,6 +4,7 @@ import del from "del";
 import dartSass from "sass"
 import gulpSass from "gulp-sass";
 import tilde from "node-sass-tilde-importer";
+import pug from "gulp-pug";
 const sass = gulpSass(dartSass)
 
 const server = () => {
@@ -17,7 +18,8 @@ const server = () => {
 }
 
 const html = () => {
-	return gulp.src("./src/index.html")
+	return gulp.src("./src/index.pug")
+		.pipe(pug())
 		.pipe(gulp.dest("./dist"))
 		.pipe(browser.stream())
 }
