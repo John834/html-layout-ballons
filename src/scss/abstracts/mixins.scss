@@ -1,0 +1,10 @@
+@mixin style-link {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: $white;
+}
+
+@mixin header-animation($op, $slate) {
+	opacity: $op;
+	transform: $slate
+}

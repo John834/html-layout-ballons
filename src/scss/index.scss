@@ -1,24 +1,28 @@
-@import "fonts";
+// abstracts
+@import "abstracts/fonts";
 @import "~normalize.css/normalize";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-html {
-	font-size: 62.5%;
-}
+// base
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-body {
-	font-family: "Roboto";
-	font-weight: 400;
-	color: #777;
-	font-size: 1.6rem;
-	letter-spacing: 0.2rem;
-	padding: 5rem;
-	background: #ffffff;
-	color: #fff;
-}
+// components
+@import "components/button";
+
+// layout
+@import "layout/header.scss";
+
+// pages
+@import "pages/home";
+
+
 
 .container {
 	background: #a8ab7c61;
 }
 
 
-@import "./components/header";

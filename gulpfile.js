@@ -48,7 +48,7 @@ const clean = () => {
 }
 
 const watch = () => {
-	gulp.watch("./src/index.html", html)
+	gulp.watch("./src/**/*.pug", html)
 	gulp.watch("./src/scss/**/*.scss", scss)
 	gulp.watch("./src/img/**/*", img)
 

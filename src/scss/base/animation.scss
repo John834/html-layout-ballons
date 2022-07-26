@@ -1,0 +1,32 @@
+@keyframes showmain {
+	0% {
+		@include header-animation(0, translateX(-2rem));
+	}
+	50% {
+		@include header-animation(0, translateX(+2rem));
+	}
+	100% {
+		@include header-animation(1, translateX(0));
+	}	
+}
+
+@keyframes showsecondary {
+	0% {
+		@include header-animation(0, translateX(2rem));
+	}
+	50% {
+		@include header-animation(0, translateX(-2rem));
+	}
+	100% {
+		@include header-animation(1, translateX(0));
+	}	
+}
+
+@keyframes animationbtn {
+	0% {
+		@include header-animation(0, translateY(10rem));
+	}
+	100% {
+		@include header-animation(1, translateX(0));
+	}
+}
