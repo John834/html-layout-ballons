@@ -8,3 +8,11 @@
 	opacity: $op;
 	transform: $slate
 }
+
+@mixin clearfix {
+	&::after {	
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

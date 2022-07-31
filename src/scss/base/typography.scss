@@ -1,8 +1,8 @@
 body {
 	font-family: "Roboto";
 	font-weight: 400;
-	color: $gray;
-	font-size: 1.6rem;
+	color: $black;
+	font-size: $font-size-paragraph;
 	letter-spacing: 0.2rem;
 }
 
@@ -33,4 +33,43 @@ body {
 		letter-spacing: 0.5rem;
 		backface-visibility: hidden;
 	}
+}
+
+// section-about
+
+.title-secondary {
+	margin: 0;
+	font-size: $font-size-paragraph-h2;
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba($brown-dark, 0.7) 99.94%);
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: all 0.8s;
+	display: inline-block;
+	backface-visibility: hidden;
+	&:hover {
+		transform: skewY(2deg) skewX(2deg) scale(1.1);
+		text-shadow: $shadow-h2;
+	}
+}
+
+.title-third {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: $font-size-paragraph-h3;
+	line-height: 2.4rem;
+	letter-spacing: 0.2rem;
+	color: $gray;
+}
+
+.paragraph {
+	margin: 0;
+	font-weight: 400;
+	font-size: $font-size-paragraph;
+	line-height: 140%;
+	letter-spacing: 0.2rem;
+	color: #777777;
 }
