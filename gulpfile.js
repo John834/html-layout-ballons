@@ -33,6 +33,19 @@ const scss = () => {
 		.pipe(browser.stream())
 }
 
+const iconStyle = () => {
+	return gulp.src("./src/scss/icon-font.scss")
+		.pipe(sass())
+		.pipe(gulp.dest("./dist/css/"))
+		// gulp.src("./src/scss/fonts/")
+		// .pipe(gulp.dest("./dist/css/fonts/"))
+}
+
+const iconFont = () => {
+	return gulp.src("./src/scss/fonts/*")
+		.pipe(gulp.dest("./dist/css/fonts/"))
+}
+
 const img = () => {
 	return gulp.src("./src/img/**/*")
 		.pipe(gulp.dest("./dist/img/"))
@@ -54,7 +67,7 @@ const watch = () => {
 
 }
 
-const main = gulp.parallel(fonts, img, html, scss)
+const main = gulp.parallel(fonts, img, html, scss, iconStyle, iconFont)
 const dev = gulp.series(clean, main, gulp.parallel(watch, server))
 
 gulp.task("default", dev)
