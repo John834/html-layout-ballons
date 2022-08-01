@@ -1,4 +1,13 @@
 .section-about {
 	padding-top: 8rem;
-	
 }
+
+.section-adventure {
+	padding: 21rem 0;
+	background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("../img/adventure/adventure.jpg") 50% 50% / cover no-repeat;
+	transform: skewY(7deg);
+	& > * {
+		transform: skewY(-7deg);
+	}
+}
+
