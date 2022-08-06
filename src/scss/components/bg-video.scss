@@ -1,0 +1,20 @@
+.bg-video {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bg-gradient {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	background: linear-gradient(90deg, rgba($brown-light, 0.7) 0.03%, rgba($brown-dark, 0.7));
+	opacity: 0.6;
+}
