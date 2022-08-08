@@ -19,3 +19,39 @@
 		animation-fill-mode: backwards;
 	}
 }
+
+
+.btn {
+	&, &:link, &:visited {
+		@include style-link;
+		padding: 1.5rem 4rem;
+		border-radius: 5rem;
+		color: $gray;
+		transition: all .8ms;
+		border: none;
+	}
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: $shadow;
+	}
+	&:active {
+		transform: translateY(-2px);
+	}
+	&-animation {
+		animation: animationbtn 1.2s ease .4s;
+		animation-fill-mode: backwards;
+	}
+}
+
+
+.btn_brown {
+	&, &:link, &:visited {
+		background: $brown-dark;
+		color: white;
+	}
+	&:hover {
+		&::after {
+			background: $brown-dark;
+		}
+	}
+}

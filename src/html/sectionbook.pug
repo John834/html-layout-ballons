@@ -1,0 +1,24 @@
+section.section-book
+	.row
+		.book
+			.book__form
+				form.form(action="#")
+					.text-align-center.margin-bottom-30px
+						h2.title-secondary.title-secondary_white забронировать тур
+					.form__group
+						input.form__input(type="text" placeholder="Имя и Фамилия" id="name" required)
+						label.form__label(for="name") Ваше имя и фамилия
+					.form__group
+						input.form__input(type="email" placeholder="Ваш email" id="email" required)
+						label.form__label(for="email") Ваш email
+					.form__group
+						.form__group-radio
+							input.form__input-radio(type="radio" id="tour-1" name="cheked")
+							label.form__label-radio(for="tour-1") Групповой тур
+								span.form__button-radio
+						.form__group-radio
+							input.form__input-radio(type="radio" id="tour-2" name="cheked")
+							label.form__label-radio(for="tour-2") Индивидуальный тур
+								span.form__button-radio 
+					.form__group
+						button.btn.btn_brown Забронировать
